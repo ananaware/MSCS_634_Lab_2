@@ -9,6 +9,7 @@ Dataset: Wine dataset from sklearn.datasets (class counts: 59, 71, and 48)
 Split: 80% training (142 samples) and 20% testing (36 samples), using random_state=42
 KNN values of k tested: 1, 5, 11, 15, 21
 RNN radius values tested: 350, 400, 450, 500, 550, 600
+
 Results
 k (KNN)	Accuracy		Radius (RNN)	Accuracy
 1	0.7778		350	0.7500
@@ -17,6 +18,7 @@ k (KNN)	Accuracy		Radius (RNN)	Accuracy
 15	0.7500		500	0.7222
 21	0.7778		550	0.7222
 			600	0.7222
+
 Key Insights
 KNN did slightly better than RNN overall. Its best accuracy was 77.8% (at k = 1 and k = 21), compared with 75.0% for RNN (at radius 350). The average accuracy was about 75.6% for KNN and 72.7% for RNN.
 KNN accuracy went up and down as k changed. It dipped at k = 5 (72.2%) and rose again at k = 21, so there was no clear pattern where a bigger or smaller k was always better.
